@@ -14,28 +14,6 @@ Solution0::~Solution0()
 vector<int> Solution0::twoSum(vector<int> &numbers, int target)
 {
     vector<int> result;
-//    bool done = false;
-//
-//    for (unsigned int i = 0; i < numbers.size(); i++)
-//    {
-//        for (unsigned int j = i + 1; j < numbers.size(); j++)
-//        {
-//            int sum = numbers[i] + numbers[j];
-//            if (sum == target)
-//            {
-//                result.push_back(i+1);
-//                result.push_back(j+1);
-//                done = true;
-//                break;
-//            }
-//        }
-//
-//        if (done)
-//        {
-//            break;
-//        }
-//    }
-
     unordered_multimap<int, int>numbersMap;
     for (unsigned int i = 0; i < numbers.size(); i++)
     {
@@ -49,7 +27,7 @@ vector<int> Solution0::twoSum(vector<int> &numbers, int target)
         auto its = numbersMap.equal_range(other);
         for (auto it = its.first; it != its.second; ++it)
         {
-            if (it->second == i+1)
+            if (it->second == static_cast<int>(i+1))
             {
                 continue;
             }

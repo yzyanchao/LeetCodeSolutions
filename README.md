@@ -1,2 +1,2 @@
 # LeetCodeSolutions
-My solutions to leetcode algorithm problems
+My solutions to leetcode algorithm problems, in Swift.

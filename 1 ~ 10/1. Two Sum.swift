@@ -9,7 +9,7 @@
 import UIKit
 
 class Solution {
-    // Improve: scan the dict to check if there is already a target in the dict
+    // Improve: When insert item into the dict, scan it to check if there is already a target in the dict
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var dict: [Int: [Int]] = [:]
         for (i, n) in nums.enumerated() {
